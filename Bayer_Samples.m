@@ -25,9 +25,9 @@ width = 256;
 
 %   Generate a Basic Gray Step Map
 Sample = zeros(height, width);
-for i = 1:256
+for i = 1:height
     Xi = 16 * fix(i/15);
-    for j = 1:256
+    for j = 1:width
         Yj = fix(j/15);
         Sample(i, j) = Xi + Yj;
     end
@@ -35,8 +35,8 @@ end
 Sample = uint8(Sample);
 
 OuputM2 = zeros(height, width);
-for i = 1:256
-    for j = 1:256
+for i = 1:height
+    for j = 1:width
         ImageColor = Sample(i,j) / 16;
         BayerMatrix = m2(bitand(i,3) + 1, bitand(j,3) + 1);
         if ( ImageColor <= BayerMatrix )
@@ -49,8 +49,8 @@ end
 Image8BitM2 = uint8(OuputM2);
 
 OuputM3 = zeros(height, width);
-for i = 1:256
-    for j = 1:256
+for i = 1:height
+    for j = 1:width
         ImageColor = Sample(i,j) / 4;
         BayerMatrix = m3(bitand(i,7) + 1, bitand(j,7) + 1);
         if ( ImageColor <= BayerMatrix )
@@ -63,8 +63,8 @@ end
 Image8BitM3 = uint8(OuputM3);
 
 OuputM4 = zeros(height, width);
-for i = 1:256
-    for j = 1:256
+for i = 1:height
+    for j = 1:width
         ImageColor = Sample(i,j);
         BayerMatrix = m4(bitand(i,15) + 1, bitand(j,15) + 1);
         if ( ImageColor <= BayerMatrix )
@@ -107,11 +107,6 @@ for i = 1:height
     end
 end
 Gray4Step = uint8(Gray4Step);
-
-subplot(2,2,1);imshow(Sample),title('Original');
-subplot(2,2,2);imshow(Image8BitM2),title('Bayer-M2');
-subplot(2,2,3);imshow(Image8BitM3),title('Bayer-M3');
-subplot(2,2,4);imshow(Image8BitM3),title('Bayer-M4');
 
 imwrite(Sample, './sample/stepgray.png');
 imwrite(Image8BitM2, './sample/Image8BitM2.png');
