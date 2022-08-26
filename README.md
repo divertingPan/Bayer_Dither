@@ -6,8 +6,8 @@ MATLAB源码可直接运行，想要生成自己的图像可以将/data目录中
 processing程序使用方法同上。<br>
 原文链接：<a href="https://divertingpan.github.io/post/bayer_dither/" target="_blank">数字图像处理 | 图像二值化中的规则抖动算法</a><br>
 
-The MATLAB code is out-of-the-box with changing the image in /data folder, and the file name should not be modified. 
-Or you can add your file and change the path name in the code where the image is loaded. 
+Run the MATLAB code with just putting your image in /data folder, and the filename should not be modified. 
+Or you can add your file and change the pathname in the code where the image is loaded. 
 Same as the Processing code.
 
 Link (Chinese): https://divertingpan.github.io/post/bayer_dither/
