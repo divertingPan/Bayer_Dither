@@ -1,5 +1,9 @@
 # 图像二值化中的规则抖动算法 | Using Bayer Dither to Binarize the Digital Image
 
+<div align="center">
+   <img src="https://github.com/divertingPan/Bayer_Dither/blob/master/sample/stepgray.png" >   <img src="https://github.com/divertingPan/Bayer_Dither/blob/master/sample/Image8BitM3.png" >
+</div>
+
 ## 使用说明 | Notification
 MATLAB源码可直接运行，想要生成自己的图像可以将/data目录中的img图像换成自己的，文件名使用同名的，不要改变。<br>
 或者添加进新图像之后修改MATLAB中的读取文件名称。/output为输出文件目录。<br>
