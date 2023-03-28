@@ -1,8 +1,14 @@
 # 图像二值化中的规则抖动算法 | Using Bayer Dither to Binarize the Digital Image
 
 <div align="center">
-   <img src="https://github.com/divertingPan/Bayer_Dither/blob/master/sample/stepgray.png" >   <img src="https://github.com/divertingPan/Bayer_Dither/blob/master/sample/Image8BitM3.png" >
+   <img src="https://github.com/divertingPan/Bayer_Dither/blob/master/sample/fig_0.jpg" >
 </div>
+
+## 更新 | Latest Update
+在ChatGPT的帮助下，我用python对Bayer抖动的这几个方法重写了一下，这样更方便大家研究使用。并且借助numpy，使得处理的速度也有了一些提升。在脚本里面的各个方法的输出效果预览见上图。
+
+With the assistance of ChatGPT, I have rewritten these Bayer dithering methods in Python. This has made the code easier to develop and research further. Additionally, using numpy has improved the speed of the code. The above image shows a preview of each method in the Python script.
+
 
 ## 使用说明 | Notification
 MATLAB源码可直接运行，想要生成自己的图像可以将/data目录中的img图像换成自己的，文件名使用同名的，不要改变。<br>
