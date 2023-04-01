@@ -5,7 +5,7 @@
 </div>
 
 ## 更新 | Latest Update
-在ChatGPT的帮助下，我用python对Bayer抖动的这几个方法重写了一下，这样更方便大家研究使用。并且借助numpy，使得处理的速度也有了一些提升。在脚本里面的各个方法的输出效果预览见上图。
+在ChatGPT的帮助下，我用python对Bayer抖动的这几个方法重写了一下（[bayer.py](https://github.com/divertingPan/Bayer_Dither/blob/master/bayer.py)），这样更方便大家研究使用。并且借助numpy，使得处理的速度也有了一些提升。在脚本里面的各个方法的输出效果预览见上图。
 
 With the assistance of ChatGPT, I have rewritten these Bayer dithering methods in Python. This has made the code easier to develop and research further. Additionally, using numpy has improved the speed of the code. The above image shows a preview of each method in the Python script.
 
